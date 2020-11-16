@@ -15,8 +15,8 @@ import java.util.List;
 
 public class TestVod {
     public static void main(String[] args) throws ClientException {
-        String accessKeyId = "LTAI4FzMqhJYHh9jfzX7H3CN";
-        String accessKeySecret = "VvRnPtp9uCg3hxeQeJcwEoUJ6O6Yjz";
+        String accessKeyId = "";
+        String accessKeySecret = ";
 
         String title = "6 - What If I Want to Move Faster - upload by sdk";   //上传之后文件名称
         String fileName = "C:\\Users\\14257\\Videos\\Captures\\20200708153241.mp4";  //本地文件路径和名称
@@ -42,7 +42,7 @@ public class TestVod {
     }
     //获取凭证
     public  static  void getPlayAuth() throws ClientException {
-        DefaultAcsClient defaultAcsClient = InitObject.initVodClient("LTAI4FzMqhJYHh9jfzX7H3CN", "VvRnPtp9uCg3hxeQeJcwEoUJ6O6Yjz");
+        DefaultAcsClient defaultAcsClient = InitObject.initVodClient(");
         GetVideoPlayAuthRequest request = new GetVideoPlayAuthRequest();
         GetVideoPlayAuthResponse response = new GetVideoPlayAuthResponse();
         request.setVideoId("01446c11dab8465ab4a969aa1a0f2cc4");
@@ -52,7 +52,7 @@ public class TestVod {
     }
     //获取地址
     public  static  void getPlayUrl() throws ClientException {
-        DefaultAcsClient defaultAcsClient = InitObject.initVodClient("LTAI4FzMqhJYHh9jfzX7H3CN", "VvRnPtp9uCg3hxeQeJcwEoUJ6O6Yjz");
+        DefaultAcsClient defaultAcsClient = InitObject.initVodClient(");
         GetPlayInfoRequest request = new GetPlayInfoRequest();
         request.setVideoId("01446c11dab8465ab4a969aa1a0f2cc4");
         GetPlayInfoResponse response=defaultAcsClient.getAcsResponse(request);
